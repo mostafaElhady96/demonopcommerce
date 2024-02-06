@@ -76,6 +76,11 @@ public class P03_homePage {
         return hooks.driver.findElement(By.className("qty-input"));
     }
 
+    public List<WebElement> maincategory() {
+        return hooks.driver.findElements(By.cssSelector("ul.top-menu.notmobile > li > a[href]"));
+    }
+
+
 
 }
 

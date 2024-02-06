@@ -81,5 +81,7 @@ public class D01_RegisterStepDef {
     @And("user enter enter {string} in email field")
     public void userEnterEnterInEmailField(String emailm) {
         register.email().sendKeys(emailm);
+        System.out.println("success");
     }
+
 }
