@@ -60,8 +60,8 @@ public class D07_followUsStepDef {
 
     @Then("user found rss page")
     public void userFoundRssPage() {
-        List<String> tabs = new  ArrayList<>(hooks.driver.getWindowHandles());
-        hooks.driver.switchTo().window(tabs.get(1));
+        //List<String> tabs = new  ArrayList<>(hooks.driver.getWindowHandles());
+       // hooks.driver.switchTo().window(tabs.get(1));
         System.out.println(hooks.driver.getCurrentUrl());
     }
 

@@ -1,5 +1,5 @@
 Feature: wishlist feature
-
+  @Regression
   Scenario: add item to wishlist and confirm added successfully
     Given user go to login page
     When user login with valid "Ahmed@gmail.com" in email field  and "Mostafa@" in passwordfield

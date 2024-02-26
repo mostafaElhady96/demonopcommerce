@@ -33,7 +33,7 @@ public class D06_homeSlidersStepDef {
     public void userClickOnSliderButton() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(hooks.driver, Duration.ofSeconds(10));
         slider.secondSlideButton().click();
-        wait.until(ExpectedConditions.elementToBeClickable(slider.secondSlide()));
+        wait.until(ExpectedConditions.visibilityOf(slider.secondSlide()));
         slider.secondSlide().click();
     }
 

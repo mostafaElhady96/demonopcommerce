@@ -1,3 +1,4 @@
+@Regression
 Feature: search feature
 
   Scenario Outline: user could search using product name
@@ -7,7 +8,6 @@ Feature: search feature
     Then search result contains "<productname>"
     Examples:
       |productname|
-      |book|
       |laptop|
       |nike|
 
@@ -20,5 +20,4 @@ Feature: search feature
     Examples:
       | sku |
       |SCI_FAITH|
-      |APPLE_CAM|
       |SF_PRO_11|

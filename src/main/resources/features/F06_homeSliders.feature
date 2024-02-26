@@ -1,5 +1,6 @@
-Feature: home slider
 
+Feature: home slider
+  @Regression
   Scenario: first slider is clickable on home page
     Given user go to homepage
     When User click on first slider

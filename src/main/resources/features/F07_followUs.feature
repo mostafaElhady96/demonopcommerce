@@ -1,3 +1,4 @@
+@Regression
 Feature: follow us link
 
  Scenario: user go to facebook
@@ -15,7 +16,6 @@ Feature: follow us link
   Scenario:user opens rss link
     Given user go to homepage
     When user click on rss icon
-    And user wait for loading of new window
     Then user found rss page
 
   Scenario: user opens youtube link

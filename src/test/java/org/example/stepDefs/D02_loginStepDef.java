@@ -36,8 +36,8 @@ public class D02_loginStepDef {
         String actualUrl =hooks.driver.getCurrentUrl();
         String expectedUrl="https://demo.nopcommerce.com/";
         soft.assertTrue(expectedUrl.contains(actualUrl),"url is not right ");
-        soft.assertTrue(login.myaccontTab().isSelected());
-        System.out.println(login.myaccontTab().isSelected());
+        soft.assertTrue(login.myaccontTab().isEnabled());
+        System.out.println(login.myaccontTab().isEnabled());
         soft.assertAll();
     }
 

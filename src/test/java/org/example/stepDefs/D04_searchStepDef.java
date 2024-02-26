@@ -28,9 +28,8 @@ public class D04_searchStepDef {
         SoftAssert soft = new SoftAssert();
         String actualUrl= hooks.driver.getCurrentUrl();
         String expectedUrl ="https://demo.nopcommerce.com/search?q";
-       // soft.assertTrue(expectedUrl.contains(actualUrl));
         soft.assertTrue(actualUrl.contains(expectedUrl));
-        //System.out.println("url assertion passed");
+        System.out.println("url assertion passed");
 
 
         int searchresultnumber =hooks.driver.findElements(By.className("product-title")).size();
